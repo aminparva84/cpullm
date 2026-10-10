@@ -1,0 +1,14 @@
+[project]
+name = "cpu-llm"
+version = "1.7.0"
+description = "CPU-native vertical slice for cone-gated symbolic deduction."
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26",
+  "pydantic>=2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
